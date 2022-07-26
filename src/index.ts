@@ -28,33 +28,13 @@ let alternativeWay = (message as string).endsWith('c');
 
 // Interface example
 
-// interface Point {
-//   x: number,
-//   y: number,
-// }
-
-// let drawPoint = (point: Point) => {
-//   // ...
-// }
-
-// drawPoint({x: 1, y: 2});
-
-// Class example
-
-
-class Point {
-  x: number;
-  y: number;
-  draw () {
-    console.log("X: " + this.x + ", Y: " + this.y);
-  }
-
-  getDistance (another: Point) {
-
-  }
+interface Point {
+  x: number,
+  y: number,
 }
 
-let point = new Point();
-point.x = 2;
-point.y = 7;
-point.draw();
+let drawPoint = (point: Point) => {
+  // ...
+}
+
+drawPoint({x: 1, y: 2});
