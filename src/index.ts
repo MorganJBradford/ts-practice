@@ -26,14 +26,35 @@ let endsWithC = (<string>message).endsWith('c');
 //* 2. First is used more often
 let alternativeWay = (message as string).endsWith('c');
 
+// Interface example
 
-interface Point {
-  x: number,
-  y: number
+// interface Point {
+//   x: number,
+//   y: number,
+// }
+
+// let drawPoint = (point: Point) => {
+//   // ...
+// }
+
+// drawPoint({x: 1, y: 2});
+
+// Class example
+
+
+class Point {
+  x: number;
+  y: number;
+  draw () {
+    console.log("X: " + this.x + ", Y: " + this.y);
+  }
+
+  getDistance (another: Point) {
+
+  }
 }
 
-let drawPoint = (point: Point) => {
-  // ...
-}
-
-drawPoint({x: 1, y: 2});
+let point = new Point();
+point.x = 2;
+point.y = 7;
+point.draw();
