@@ -17,3 +17,11 @@ console.log(customer?.birthday?.getFullYear());
 // Optional call
 let log: any = null;
 log?.('a');
+
+
+// Type Assertions
+let message = 'abc';
+//* 1
+let endsWithC = (<string>message).endsWith('c');
+//* 2. First is used more often
+let alternativeWay = (message as string).endsWith('c');
