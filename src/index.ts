@@ -1,3 +1,4 @@
+import { Point } from './class-example';
 type Customer = {
   birthday?: Date;
 }
@@ -28,12 +29,12 @@ let alternativeWay = (message as string).endsWith('c');
 
 // Interface example
 
-interface Point {
+interface IPoint {
   x: number,
   y: number,
 }
 
-let drawPoint = (point: Point) => {
+let drawPoint = (point: IPoint) => {
   // ...
 }
 
