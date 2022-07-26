@@ -1,8 +1,19 @@
-const calculateTax = (income: number, taxYear = 2022): number => {
-
-  if (taxYear < 2022)
-    return income * 1.2;
-  return -1;
+type Customer = {
+  birthday?: Date;
 }
 
-calculateTax(10_000)
+function getCustomer(id: number): Customer | null | undefined {
+  return id === 0 ? null : {birthday: new Date()}
+}
+
+let customer = getCustomer(1);
+
+// Optional property access operator
+console.log(customer?.birthday?.getFullYear());
+
+// Optional element access operator
+// customers?.[0]
+
+// Optional call
+let log: any = null;
+log?.('a');
