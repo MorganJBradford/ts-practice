@@ -25,3 +25,15 @@ let message = 'abc';
 let endsWithC = (<string>message).endsWith('c');
 //* 2. First is used more often
 let alternativeWay = (message as string).endsWith('c');
+
+
+interface Point {
+  x: number,
+  y: number
+}
+
+let drawPoint = (point: Point) => {
+  // ...
+}
+
+drawPoint({x: 1, y: 2});
